@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Katchy · Zoned out in class? We Katch you up.</title>
+<meta name="description" content="Tap “I zoned out” and Katchy recaps the last 2 minutes of your lecture and asks you one question. Join the waitlist.">
+<link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <a class="brand" href="index.html" aria-label="Katchy home"><img src="logo.svg" alt="Katchy"></a>
+  <div class="links">
+    <a href="#how">How it works</a>
+    <a href="science.html">The science</a>
+    <a href="#faq">FAQ</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a class="pill" href="#join">Join the waitlist</a>
+</nav>
+
+<header class="hero" id="join">
+  <div>
+    <h1>Request early access to Katchy</h1>
+    <p class="lead">Zoned out in class? Tap <b>“I zoned out”</b> and Katchy recaps the last 2 minutes of the lecture, then asks you one quick question so it sticks.</p>
+    <form class="wl" novalidate>
+      <input type="email" name="email" placeholder="Your email" autocomplete="email" required aria-label="Email">
+      <button class="pill" type="submit">Get early access</button>
+      <input type="text" name="university" placeholder="Your university (optional)" aria-label="University">
+      <input class="hp" type="text" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label class="consent"><input type="checkbox" name="consent"> <span>Email me about Katchy's launch. I've read the <a href="privacy.html">privacy notice</a> and can unsubscribe any time.</span></label>
+      <p class="status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+  <svg class="art" viewBox="0 0 600 520" role="img" aria-label="A chrome ring with the Katchy K coin">
+    <defs>
+      <linearGradient id="chrome" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbfbfe"/><stop offset=".45" stop-color="#d9dae6"/><stop offset=".7" stop-color="#b5b7c8"/><stop offset="1" stop-color="#eef0f6"/></linearGradient>
+      <linearGradient id="side" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9cad8"/><stop offset="1" stop-color="#9c9eb3"/></linearGradient>
+      <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset=".5" stop-color="#F5A100"/><stop offset="1" stop-color="#a86a00"/></linearGradient>
+      <radialGradient id="shadow"><stop offset="0" stop-color="#7a7f94" stop-opacity=".35"/><stop offset="1" stop-color="#7a7f94" stop-opacity="0"/></radialGradient>
+    </defs>
+    <ellipse cx="300" cy="420" rx="250" ry="60" fill="url(#shadow)"/>
+    <!-- ring: side wall then top face, with a gap (the 2 minutes you missed) -->
+    <g transform="translate(300 290)">
+      <path d="M-230 0 A230 120 0 1 0 150 -91 L150 -46 A230 120 0 1 1 -230 45 Z" fill="url(#side)"/>
+      <path d="M-230 0 A230 120 0 1 0 150 -91 L95 -58 A140 72 0 1 1 -140 0 Z" fill="url(#chrome)" stroke="#fff" stroke-width="2"/>
+      <path d="M-140 0 A140 72 0 0 0 95 -58" fill="none" stroke="#a3a5b9" stroke-width="2"/>
+      <!-- the gap, highlighted -->
+      <path d="M150 -91 A230 120 0 0 0 -10 -120" fill="none" stroke="#F5A100" stroke-width="6" stroke-dasharray="4 14" stroke-linecap="round" opacity=".8"/>
+    </g>
+    <!-- coin with K -->
+    <g transform="translate(330 140) rotate(-12)">
+      <ellipse cx="0" cy="14" rx="92" ry="92" fill="#8a5600"/>
+      <ellipse cx="0" cy="0" rx="92" ry="92" fill="url(#gold)"/>
+      <circle r="74" fill="#013D59"/>
+      <g fill="none" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M-22 -38V38" stroke="#F5A100"/><path d="M26 -38L0 0L26 38" stroke="#fff"/>
+      </g>
+    </g>
+  </svg>
+</header>
+
+<section class="cols" aria-label="What you get">
+  <div><h3>Instant<br>recap</h3><p>The last ~2 minutes of the lecture in a few lines, the moment you lose the thread.</p><a href="#how">See how it works →</a></div>
+  <div><h3>One question,<br>not a quiz</h3><p>A single retrieval question to lock the idea in. Research says it roughly halves mind-wandering.</p><a href="science.html">Read the science →</a></div>
+  <div><h3>Private<br>by design</h3><p>Speech is turned into text on your own device. No emotion tracking, nothing sent to your university.</p><a href="privacy.html">Our privacy promise →</a></div>
+</section>
+</div>
+
+<section class="band" id="how"><div class="wrap">
+  <h2>How it works</h2>
+  <p class="lead">Three steps. Nobody else in the room even notices.</p>
+  <div class="steps">
+    <div class="step"><b>1</b><h4>Open Katchy in class</h4><p>It transcribes the lecture on your phone, iPad or laptop, in Italian or English, where your university allows it.</p></div>
+    <div class="step"><b>2</b><h4>Tap “I zoned out”</h4><p>One big button. Picked up your phone? Katchy offers to catch you up when you're back.</p></div>
+    <div class="step"><b>3</b><h4>Recap + one question</h4><p>Read what you missed, answer one question, then mark it: Got it, Shaky or Still lost.</p></div>
+  </div>
+  <p style="margin-top:36px"><a class="pill" href="#join">Get early access</a></p>
+</div></section>
+
+<section class="band" id="faq"><div class="wrap">
+  <h2>FAQ</h2>
+  <details><summary>When does Katchy launch?</summary><p>We're testing with students in Milan this semester. Waitlist members get the first invites, before the public launch.</p></details>
+  <details><summary>How much will it cost?</summary><p>Early access is free. If we ever add paid features, waitlist members will hear first and keep a free way to use the core button.</p></details>
+  <details><summary>Which devices will it work on?</summary><p>iPhone and iPad first, with a Windows version for laptops in testing.</p></details>
+  <details><summary>Is it allowed to record my lectures?</summary><p>Personal-study recording is generally tolerated in Italy, but each university and professor can set their own rules. Ask your professor; Katchy keeps everything on your device either way.</p></details>
+  <details><summary>Will you spam me?</summary><p>No. You'll get a handful of emails about the launch at most, and every one has an unsubscribe option.</p></details>
+</div></section>
+
+<footer><div class="wrap">
+  <span>© 2026 Katchy · getkatchy.app</span>
+  <a href="#how">How it works</a><a href="science.html">The science</a><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a>
+</div></footer>
+<script src="app.js"></script>
+</body>
+</html>

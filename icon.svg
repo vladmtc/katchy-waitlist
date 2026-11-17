@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Katchy">
+  <title>Katchy</title>
+  <rect width="512" height="512" rx="116" fill="#013D59"/>
+  <g fill="none" stroke-width="56" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M164 148V364" stroke="#F5A100"/>
+    <path d="M348 148L248 256L348 364" stroke="#FFFFFF"/>
+  </g>
+</svg>
